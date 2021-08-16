@@ -49,6 +49,9 @@ hr {
     display: inline;
     padding: 0rem 0.5rem;
 }
+.list-showcase {
+    padding: 2rem;
+}
 /* nav */
 .nav {
     background-color: var(--primary-color);
