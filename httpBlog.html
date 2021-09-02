@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog  | http response status codes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav container">
+        <div class="nav-brand">IAmDeveloper</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+             </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-heading">HTTP response status codes</h1>
+        <img class="hero-image"src="/img/http404.svg"/>
+    </header>
+
+    <!-- <section class="section section-ow"> -->
+    <section class="section">
+        <div class="container container-center">
+            <!-- <h1>Technologies</h1> -->
+            <small>September,2021</small>
+            <p>HTTP response status codes are issued by a server in response to a client's request made to the server and it indicates whether a http request which is sent by the client is successfully completed. The Internet Assigned Numbers Authority (IANA) maintains the official registry of HTTP status codes.</p>
+            <!-- <br/> -->
+            <p>All HTTP response status codes are classified into 5 different types.The first digit of the status code defines the class of response and last two digits do not have any specific role here.</p>
+            <h3>5 different status codes are listed bellow</h3>
+            <ol>
+                <li><h4>Informal responses (100 - 199) : </h4> These response codes indicates that the request was received and continuing process.</li>
+                <li><h4>Successful responses (200 - 299) : </h4> These response codes indicates that the request was received, understood, and accepted.</li>
+                <li><h4>Redirect responses (300 - 399) : </h4> These response codes indicates that further action needs to be taken to complete the request which is sent by client.</li>
+                <li><h4>Client error (400 - 499) : </h4> These response codes indicates that the request contains bad syntax or required source cannot be found.</li>
+                <li><h4>Server error (500 - 599) : </h4> These response codes indicates that the server failed to fulfil valid client request.</li>
+            </ol>
+            <p><strong>Note :</strong> If you receive other than these response status, that is possibly custom to the server's software and it is a non-standard response.</p>
+            <p>A very famous and well known HTTP response status code is 404. It indicates that the server cannot find the requested source in the browser, this means the URL entered is not a valid one. In an API, this means the end point is valid but the source doesn't exist.</p>
+            <p><strong>For more information visit<a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP response status codes - HTTP | MDN</a></strong></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+        <ul>
+            <li class="list-item-inline"><a class="link" href="https://github.com/UshaGururaj">Github</a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/usha-bg-002734192">LinkedIn</a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="https://instagram.com/usha_g_raj">Instagram</a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/UshaBG1">Twitter</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
