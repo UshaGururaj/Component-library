@@ -18,12 +18,25 @@ hr {
 }
 /* container */
 .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
 }
 .container-center{
     max-width: 600px;
     margin: auto;
+}
+.container-blog{
+    max-width: 900px;
+    margin:auto;
+}
+.container-card{
+    box-shadow: 0 1px 20px #928f8f;
+    margin: 1rem;
+    /* padding: 0.1rem; */
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3rem;
 }
 /* links */
 .link {
@@ -34,12 +47,15 @@ hr {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color:black;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 20px #f8f6f6;
 }
 .link-secondary {
     /* color:var(--primary-color); */
     color:black;
     border-radius:0.5rem;
     border: 1px solid var(--primary-color);
+    box-shadow: 0 1px 20px #faf8f8;
 }
 /* lists */
 .list-non-bullet {
