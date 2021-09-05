@@ -17,10 +17,10 @@ hr {
     margin:2rem 0rem;
 }
 /* container */
-.container {
-    /* padding-left: 1rem; */
-    /* padding-right: 1rem; */
-}
+/* .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} */
 .container-center{
     max-width: 600px;
     margin: auto;
@@ -104,6 +104,8 @@ hr {
     text-align: center;
     padding-top: 1rem;
     color: var(--dark-gray);
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
