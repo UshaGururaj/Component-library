@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog | console </title>
+</head>
+<body>
+    <h1></h1>
+    <div>
+        <p>
+            In our day-to-day life we developers talk about web console. What is this Web console? How we will get output in console. What is console.log()? We will discuss all these in this blog. This blog is all about Console and it's methods.
+        </p>
+        <h3>Console and it's methods</h3>
+        <p>First we will understand what is console and how it works. The console object provides access to the browser's debugging console. It's functionality varies from browser to browser. This console object can be accessed from any global object. It supports below listed methods.</p>
+        <ol>
+            <li>console.assert( )</li>
+            <li>console.clear( )</li>
+            <li>console.count( )</li>
+            <li>console.countReset( )</li>
+            <li>console.debug( )</li>
+            <li>console.dir( )</li>
+            <li>console.dirxml( )</li>
+            <li>console.error( )</li>
+            <li>console.group( )</li>
+            <li>console.groupCollapsed( )</li>
+            <li>console.groupEnd( )</li>
+            <li>console.info( )</li>
+            <li>console.log( )</li>
+            <li>console.profile( )</li>
+            <li>console.profileEnd( )</li>
+            <li>console.table( )</li>
+            <li>console.time( )</li>
+            <li>console.timeEnd( )</li>
+            <li>console.timeLog( )</li>
+            <li>console.timeStamp( )</li>
+            <li>console.trace( )</li>
+            <li>console.warn( )</li>
+        </ol>
+        <p>The most frequently used methods are logging of text and other data. They are console.error(), console.info(), console.log(), console.warn() and we will discuss about all these frequently used methods.</p>
+        <ul>
+            <li><strong>console.log()</strong></li>
+            <p>This method outputs the message to the web console. That message may be string, integer or float numbers, array, objects.</p>
+            <p><strong>Syntax :</strong>console.log(message);</p>
+            <p>This function takes message as a parameter. This message can be an object(s), string, or array data type.</p>
+            <p>Example to write string to the console.</p>
+            <p>console.log("printing on console");</p>
+            <p>Example to write an array to the console.</p>
+            <p>let arrayList = [2,3,4,5,6,7];</p>
+            <p>console.log(arrayList[index];)</p>
+            <p>Example to write an object to the console.</p>
+            <p>const studentObj = {name : Ram,age : 22, gpa : 7.5};</p>
+            <p>console.log("Student name is " + studentObj.name + ".His age is " + studentObj.age +" and he secured " + studentObj.gpa + " GPA.");</p>
+            <li><strong>console.dir()</strong></li>
+            <p>This method lists all properties of javascript object which we pass as a parameter.</p>
+            <p><strong>Syntax :</strong>console.dir(object);</p>
+            <p>Then what is the difference between console.log() and console.dir()?</p>
+            <p>When we try to console DOM elements in chrome there we can see useful difference.That is, console.log() prints the element in a HTML - like tree.But, console.dir() prints the element in a JSON - like tree.</p>
+            <li> <strong>console.error()</strong></li>
+            <p>This method help us to output errror message to the web console.</p>
+            <p><strong>Syntax :</strong>console.error(message);</p>
+            <li> <strong>console.info()</strong></li>
+            <p>This method outputs an informational message to the web console.</p>
+            <p><strong>Syntax :</strong>console.info(message);</p>
+            <li> <strong>console.warn()</strong></li>
+            <p>This method outputs a warning message to the web console.</p>
+            <p><strong>Syntax :</strong>console.warn(message);</p>
+            <p>Like this many methods are available in console object as listed above. These methods makes developers lives easy. Just explore other methods and adapt new habit of using console methods while debugging. It saves a lot of time.</p>
+            <p>I hope this blog is informative and useful.</p>
+            <p> <strong>Enjoy coding and debugging!</strong> </p>
+        </ul>
+    </div>
+</body>
+</html>
