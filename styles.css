@@ -16,11 +16,6 @@ body {
 hr {
     margin:2rem 0rem;
 }
-/* container */
-/* .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-} */
 .container-center{
     max-width: 600px;
     margin: auto;
@@ -48,12 +43,14 @@ hr {
     border-radius: 0.5rem;
     color:black;
     margin-bottom: 0.5rem;
-    box-shadow: 0 1px 20px #f8f6f6;
+    cursor: pointer;
+    box-shadow: 0 1px 20px #FECACA;
 }
 .link-secondary {
     /* color:var(--primary-color); */
     color:black;
     border-radius:0.5rem;
+    cursor: pointer;
     border: 1px solid var(--primary-color);
     box-shadow: 0 1px 20px #faf8f8;
 }
@@ -72,9 +69,12 @@ hr {
 /* nav */
 .nav {
     background-color: var(--primary-color);
-    /* color: white; */
     color: black;
-    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
 }
 .nav .nav-brand {
     font-weight: bold;
@@ -106,7 +106,7 @@ hr {
     padding-top: 1rem;
     color: var(--dark-gray);
     font-weight: bold;
-    font-size: 2.5rem;s
+    font-size: 2.5rem;
 }
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
@@ -129,6 +129,7 @@ hr {
     color: black;
     border-top-right-radius: 1rem;
     margin-top: 3rem;
+    box-shadow: 0 1px 25px hsl(334, 65%, 89%);
 }
 .footer .link {
     /* color: white; */
@@ -141,11 +142,13 @@ hr {
 }
 .footer .footer-header {
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
+    padding-inline-start: 0px;
 }
 .footer-icon{
     width: 2rem;
 }
+
 
 
 
