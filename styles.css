@@ -60,10 +60,11 @@ hr {
 /* lists */
 .list-non-bullet {
     list-style: none;
+    padding-inline-start: 0px;
 }
 .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
+    padding: 0.25rem;
 }
 .list-showcase {
     padding: 2rem;
@@ -127,6 +128,7 @@ hr {
     text-align: center;
     color: black;
     border-top-right-radius: 1rem;
+    margin-top: 3rem;
 }
 .footer .link {
     /* color: white; */
@@ -135,10 +137,14 @@ hr {
 }
 .footer ul {
     padding-inline-start: 0px;
+    padding-left: 0px;
 }
 .footer .footer-header {
     font-weight: bold;
     font-size: large;
+}
+.footer-icon{
+    width: 2rem;
 }
 
 
