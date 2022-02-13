@@ -1,0 +1,47 @@
+.alert {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.alert-success {
+  color: var(--alert-success-color);
+  border-color: var(--alert-success-borderColor);
+  background-color: var(--alert-success-bgColor);
+}
+
+.alert-error {
+    color: var(--alert-error-color);
+    border-color: var(--alert-error-borderColor);
+    background-color: var(--alert-error-bgColor);
+}
+
+.alert-warning {
+    color: var(--alert-warning-color);
+    border-color: var(--alert-warning-borderColor);
+    background-color: var(--alert-warning-bgColor);
+}
+
+.alert-info {
+    color: var(--alert-info-color);
+    border-color: var(--alert-info-borderColor);
+    background-color: var(--alert-info-bgColor);
+}
+
+/* alert with icon */
+.alert i {
+  font-size: inherit;
+}
+
+/* alert with close btn */
+.alert-close {
+  position: relative;
+}
+
+.close-alert {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
