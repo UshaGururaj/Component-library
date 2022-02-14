@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Castor-UI | Button</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-s">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo"> CASTOR-UI </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-s">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-s active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-s">
+                <a
+                  href="https://github.com/ushagururaj/component-library"
+                  class="border-10"
+                  >Contribute <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="m-s pt-1">
+                <button class="theme-switch-btn">
+                  <i class="fas fa-moon" title="switch theme"></i>
+                </button>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-s"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-s">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-s">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-s active">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./form.html">Forms</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Button</h1>
+
+                <p>
+                  Buttons are one of the most common UI elements. 
+                  They make it possible for users to interact with 
+                  a system and take action by making selections.
+                  They are also called call to action (CTA). Buttons that 
+                  you can use in your website's forms, website homepages, 
+                  dialog boxes, toolbars and more. 
+                </p>
+              </div>
+
+              <section>
+                <h2 id="simple-button">Simple Button</h2>
+
+                <p>
+                  Castor-UI provides different types of buttons such as 
+                  Primary, Secondary, Success, Danger, Warning, Info etc.
+                  Use <code>btn</code> class with respective contextual 
+                  classes <code>btn-primary</code> , <code>btn-secondary</code> , 
+                  <code>btn-success</code> , <code>btn-danger</code> , 
+                  <code>btn-warning</code> , <code>btn-info</code> to implement 
+                  buttons in your website.  
+                </p>
+
+                <div class="demo-container">
+                  <button class="btn btn-primary" tabindex="-1">Primary</button>
+
+                  <button class="btn btn-secondary" tabindex="-1">Secondary</button>
+
+                  <button class="btn btn-success" tabindex="-1">Success</button>
+
+                  <button class="btn btn-danger" tabindex="-1">Danger</button>
+
+                  <button class="btn btn-warning" tabindex="-1">Warning</button>
+
+                  <button class="btn btn-info" tabindex="-1">Info</button>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="outline-button">Outline Button</h2>
+
+                <p>
+                  There are two types of outline buttons, Primary and Secondary.
+                  Use <code>btn</code> class with respective contextual 
+                  classes <code>btn-primary-outline</code> , <code>btn-secondary-outline</code>
+                </p>
+
+                <div class="demo-container">
+                  <button class="btn btn-primary-outline" tabindex="-1">
+                    Primary Outline
+                  </button>
+
+                  <button class="btn btn-secondary-outline" tabindex="-1">
+                    Secondary Outline
+                  </button>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253E%2520Primary%2520Outline%2520%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253E%2520Secondary%2520Outline%2520%253C%252Fbutton%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="disable-button">Disabled Button</h2>
+
+                <p>
+                  Make buttons inactive by adding the <code>disabled</code> boolean
+                  attribute to any <code>&lt;button&gt;</code> element.
+                  A disabled button is unusable and un-clickable.
+                </p>
+
+                <div class="demo-container">
+                  <button type="button" class="btn btn-primary" disabled>
+                    Disabled
+                  </button>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520disabled%253E%2520Disabled%2520%253C%252Fbutton%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+ 
+              <section>
+                <h2 id="button-sizes">Button with different sizes</h2>
+
+                <p>
+                  Use <code>btn-l</code> and <code>btn-s</code> class to
+                  implement large and small buttons in your website.
+                </p>
+
+                <div class="demo-container">
+                  <button type="button" class="btn btn-primary btn-l">
+                    Large Button
+                  </button>
+
+                  <button type="button" class="btn btn-success btn-s">
+                    Small Button
+                  </button>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-l%2522%253ELarge%2520Button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-s%2522%253ESmall%2520Button%253C%252Fbutton%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="button-link-and-icon">Button Link and Icon</h2>
+
+                <p>
+                  You can use icons as a button which are fully accessibile to
+                  screen readers and also link as a button. Use contextual
+                  classes <code>btn-link</code> and <code>icon-btn-primary</code>
+                   to implement these buttons.
+                </p>
+
+                <div class="demo-container">
+                  <a href="#" class="btn btn-link" role="button"
+                    >Primary Link</a
+                  >
+
+                  <button class="btn icon-btn-primary" tabindex="-1">
+                    <i class="fas fa-shopping-cart" title="Shopping Cart"></i>
+                  </button>
+
+                  <button class="btn icon-btn-primary" tabindex="-1">
+                    <i class="fas fa-heart" title="Like button"></i>
+                  </button>
+
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-link%2522%2520role%253D%2522button%2522%253EPrimary%2520Link%253C%252Fa%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520icon-btn-primary%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%2520title%253D%2522Shopping%2520Cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520icon-btn-primary%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-heart%2522%2520title%253D%2522Like%2520button%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="toggle-button">Toggle Button</h2>
+
+                <p>
+                  A toggle switch is a digital ON/OFF switch. 
+                  It allows the user to change a setting between two states.
+                  Toggles may replace two radio buttons or a single checkbox 
+                  to allow users to choose between two opposing
+                  states.
+                </p>
+
+                <div class="demo-container">
+                  <div class="btn toggle-btn">
+                    <label
+                      ><input type="checkbox" class="toggle-input" />
+                      <span class="slider"></span>
+                      <span class="message"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522btn%2520toggle-btn%2522%253E%250A%2509%253Clabel%253E%250A%2509%2509%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522toggle-input%2522%2520%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522slider%2522%253E%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522message%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Flabel%253E%250A%253C%252Fdiv%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./badge.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Badge
+                </a>
+                <a href="./card.html" class="ml-auto">
+                  Card
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#simple-button">Simple Button</a>
+                </li>
+
+                <li>
+                  <a href="#outline-button">Outline Button</a>
+                </li>
+
+                <li>
+                  <a href="#disable-button">Disable Button</a>
+                </li>
+
+                <li>
+                  <a href="#button-sizes">Button with different sizes</a>
+                </li>
+
+                <li>
+                  <a href="#button-link-and-icon">Button Link and Icon</a>
+                </li>
+
+                <li>
+                  <a href="#toggle-button">Toggle Button</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with ❤️ by Usha</p>
+          <div class="social-links">
+            <a href="https://twitter.com/UshaBG1" class="mr-s"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/ushagururaj" class="mr-s"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/usha-bg-002734192/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/switch-theme.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/sidenav.js"></script>
+  </body>
+</html>
