@@ -20,4 +20,13 @@
   --alert-info-color: #0b7e97;
   --alert-info-bgColor: #cff4fc;
   --alert-info-borderColor: #29d8ff;
+
+  --btn-success-bgcolor : #048604;
+  --btn-success-hoverColor : #006d00 ;
+  --btn-danger-bgcolor : #f50924;
+  --btn-danger-hoverColor : #c00303;
+  --btn-warning-bgColor : #ffa217;
+  --btn-warning-hoverColor : #cc7b01;
+  --btn-info-bgColor : #0dcaf0;
+  --btn-info-hoverColor :#018ba7;
 }

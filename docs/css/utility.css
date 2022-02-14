@@ -7,10 +7,13 @@ body a:hover {
   transition: color 0.2s linear;
 }
 
-/* elements */
 .btn {
   padding: 0.8rem 1rem;
   font-size: 1rem;
+}
+
+.btn:hover {
+  color: #eeeeee;
 }
 
 .btn-primary {
@@ -20,7 +23,6 @@ body a:hover {
 
 .btn-primary:hover {
   background-color: var(--primary-darker-color);
-  color: #eeeeee;
 }
 
 .border-10 {

@@ -71,7 +71,6 @@ p,
 }
 
 /* font weights */
-
 .txt-light {
   font-weight: 300;
 }
@@ -93,7 +92,6 @@ p,
 }
 
 /* txt utility */
-
 .txt-secondary {
   color: var(--secondary-txt);
 }
@@ -144,7 +142,6 @@ p,
 }
 
 /* media screens */
-
 @media screen and (min-width: 769px) {
   h1,
   .h1 {
