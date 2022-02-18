@@ -182,3 +182,21 @@
   content: "ON";
   left: 6px;
 }
+
+.btn-icon {
+  position: relative;
+}
+
+.btn-icon-l i {
+  font-size: 3rem;
+}
+
+.btn-icon-m i {
+  font-size: 2rem;
+}
+
+.btn-icon .top-right {
+  top: -35%;
+  right: -30%;
+}
+

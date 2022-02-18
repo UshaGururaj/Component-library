@@ -6,6 +6,8 @@
   --black-color: #000;
   --green-color: #006e00;
   --red-color: #e62727;
+  --gray-color : #a39f9f;
+  --light-blue-color : #82e5fc;
   --light-shadow: 2px 2px 8px;
 
   --alert-success-color: #0c5a37;
@@ -29,4 +31,5 @@
   --btn-warning-hoverColor : #cc7b01;
   --btn-info-bgColor : #0dcaf0;
   --btn-info-hoverColor :#018ba7;
+  
 }
