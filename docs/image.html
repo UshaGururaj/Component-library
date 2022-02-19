@@ -116,7 +116,66 @@
 
           <div class="main-content">
             <section>
-              <h1>Image</h1>
+              <div>
+                <h1>Image</h1>
+
+                <p>
+                  Responsive images are images that never becomes wider than their parent
+                  container.
+                </p>
+              </div>
+
+              <section>
+                <h1 id="responsive-image">Responsive Image</h1>
+
+                <p>
+                  Images can be made responsive by adding
+                  <code>img-responsive</code> class to the &lt;img&gt; element.
+                </p>
+
+                <div class="demo-container">
+                  <img
+                    class="img-responsive"
+                    src="https://picsum.photos/200"
+                    alt="reponsive image"
+                  />
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2520%2520%2520%2520%2509class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2520%2520%2520%2520%2509alt%253D%2522reponsive%2520image%2522%250A%2509%252F%253E"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="round-image">Round Image</h2>
+
+                <p>
+                  Round or circular images are used in lot of place, such as
+                  profile picture. You can make image round or circular using
+                  <code>img-round</code> class which apply
+                  <code>border-radius: 50%</code> to the &lt;img&gt; element.
+                </p>
+
+                <div class="demo-container">
+                  <img
+                    class="img-responsive img-round"
+                    src="https://picsum.photos/200"
+                    alt="round image"
+                  />
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2509%2509alt%253D%2522round%2520image%2522%250A%2509%252F%253E"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
 
               <div class="next-pre-btns">
                 <a href="./card.html">
@@ -133,8 +192,12 @@
             <aside class="page-navigation">
               <h5>On This Page</h5>
               <ul>
-                <li class="m-s">
-                  <a href="#" class="py-1"></a>
+                <li>
+                  <a href="#responsive-image">Responsive Image</a>
+                </li>
+
+                <li>
+                  <a href="#round-image">Round Image</a>
                 </li>
               </ul>
             </aside>
