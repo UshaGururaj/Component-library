@@ -112,6 +112,10 @@ p,
   text-align: right;
 }
 
+.txt-left {
+  text-align: left;
+}
+
 .txt-uppercase {
     text-transform: uppercase;
 }

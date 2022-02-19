@@ -42,7 +42,6 @@ body a:hover {
 }
 
 /* layout */
-
 .min-vh-85 {
   min-height: 85vh;
 }
@@ -55,6 +54,22 @@ body a:hover {
 .max-1000-center {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.border-s {
+  border-radius: 5px;
+}
+
+.border-m {
+  border-radius: 10px;
+}
+
+.border-l {
+  border-radius: 15px;
+}
+
+.border-full {
+  border-radius: 999px;
 }
 
 /* style */
