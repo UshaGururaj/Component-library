@@ -1,0 +1,35 @@
+:root {
+  --bg-primary: #10B981;
+  --bg-secondary: #5c636a31;
+  --secondary-txt: #6c757d;
+  --white-txt: #fff;
+  --black-color: #000;
+  --green-color: #006e00;
+  --red-color: #e62727;
+  --gray-color : #a39f9f;
+  --light-blue-color : #82e5fc;
+  --light-shadow: 2px 2px 8px;
+
+  --alert-success-color: #0c5a37;
+  --alert-success-bgColor: #d1e7dd;
+  --alert-success-borderColor: #00eb81;
+  --alert-error-color: #b41c29;
+  --alert-error-bgColor: #f8d7da;
+  --alert-error-borderColor: #ff5362;
+  --alert-warning-color: #9e7c0e;
+  --alert-warning-bgColor: #fff3cd;
+  --alert-warning-borderColor: #ffd038;
+  --alert-info-color: #0b7e97;
+  --alert-info-bgColor: #cff4fc;
+  --alert-info-borderColor: #29d8ff;
+
+  --btn-success-bgcolor : #048604;
+  --btn-success-hoverColor : #006d00 ;
+  --btn-danger-bgcolor : #f50924;
+  --btn-danger-hoverColor : #c00303;
+  --btn-warning-bgColor : #ffa217;
+  --btn-warning-hoverColor : #cc7b01;
+  --btn-info-bgColor : #0dcaf0;
+  --btn-info-hoverColor :#018ba7;
+  
+}

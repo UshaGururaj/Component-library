@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Castor-UI | Badge</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-s">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo"> CASTOR-UI </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-s">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-s active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-s">
+                <a
+                  href="https://github.com/ushagururaj/component-library"
+                  class="border-10"
+                  >Contribute <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="m-s pt-1">
+                <button class="theme-switch-btn">
+                  <i class="fas fa-moon" title="switch theme"></i>
+                </button>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-s"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-s">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-s">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-s active">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./input.html">Input</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <header>
+                <h1>Badge</h1>
+
+                <p>
+                  Badges are small status descriptors for UI elements.
+                  Badge is used to add additional information to the 
+                  content such as notification numbers or number of 
+                  items in the cart or user status like online, offline, away.
+                </p>
+              </header>
+
+              <section>
+                <h2 id="badge-on-avatar">Badge on Avatar</h2>
+
+                <p>
+                  Badge on Avatar can show different user status, such as
+                  offline, online or away.
+                </p>
+
+                <p>
+                  Badge status includes online badge, offline badge, away badge and number
+                  badge. You can add this badges at four positions, top left,
+                  top right, bottom right, and bottom left and also you can add different
+                  size badges. You have to add respective contextual
+                  classes such as <code>badge-online</code> , <code>badge-offline</code> , 
+                  <code>badge-busy</code> , <code>badge-num</code> , <code>top-left</code> , 
+                  <code>top-right</code> , <code>bottom-right</code> , <code>bottom-left</code>
+                  <code>badge-l</code> , <code>badge-m</code> , <code>badge-s</code> , 
+                  <code>badge-xm</code> .
+                </p>
+
+                <div class="demo-container">
+                  <div class="badge-container">
+                    <div class="avatar avatar-l">
+                      <img
+                        class="img-responsive img-round"
+                        src="https://picsum.photos/200/300"
+                        alt="avatar with online badge"
+                      />
+                    </div>
+                    <span class="badge badge-l badge-online top-left"></span>
+                  </div>
+
+                  <div class="badge-container">
+                    <div class="avatar avatar-m">
+                      <img
+                        class="img-responsive img-round"
+                        src="https://picsum.photos/200/300"
+                        alt="avatar with number badge"
+                      />
+                    </div>
+                    <span class="badge badge-m badge-num top-right">3</span>
+                  </div>
+
+                  <div class="badge-container">
+                    <div class="avatar avatar-s">
+                      <img
+                        class="img-responsive img-round"
+                        src="https://picsum.photos/200/300"
+                        alt="avatar with busy badge"
+                      />
+                    </div>
+                    <span
+                      class="badge badge-s badge-busy bottom-right bold-txt"
+                    ></span>
+                  </div>
+
+                  <div class="badge-container">
+                    <div class="avatar avatar-xs">
+                      <img
+                        class="img-responsive img-round"
+                        src="https://picsum.photos/200/300"
+                        alt="avatar with offline badge"
+                      />
+                    </div>
+                    <span
+                      class="badge badge-xm badge-offline bottom-left"
+                    ></span>
+                  </div>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520large%2520avatar%2520with%2520large%2520online%2520badge%2520positioned%2520at%2520top-left%2520--%253E%250A%2509%2509%2509%2509%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522Put%2520image%2520link%2520or%2520path%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522add%2520alternative%2520text%2520here%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-l%2520badge-online%2520top-left%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%253C%21--%2520medium%2520avatar%2520with%2520medium%2520number%2520badge%2520positioned%2520at%2520top%2520right%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522Put%2520image%2520link%2520or%2520path%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522add%2520alternative%2520text%2520here%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-m%2520badge-num%2520top-right%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21--%2520small%2520avatar%2520with%2520small%2520busy%2520badge%2520positioned%2520at%2520bottom%2520right%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522Put%2520image%2520link%2520or%2520path%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522add%2520alternative%2520text%2520here%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522badge%2520badge-s%2520badge-busy%2520bottom-right%2520bold-txt%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%253C%21--%2520extra%2520small%2520avatar%2520with%2520small%2520offline%2520badge%2520positioned%2520at%2520bottom%2520left%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522Put%2520image%2520link%2520or%2520path%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522alternative%2520text%2520here%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 590px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="badge-on-icons">Badge on Icons</h2>
+
+                <p>
+                  Number badges on icons is commonly used pattern to display
+                  number counts of notification or any other countable thing.
+                </p>
+
+                <div class="demo-container">
+                  <button class="btn btn-icon btn-icon-l badge-container">
+                    <i class="fas fa-shopping-cart" title="shopping cart"></i>
+                    <span class="badge badge-l badge-num top-right bold-txt"
+                      >5</span
+                    >
+                  </button>
+
+                  <button class="btn btn-icon btn-icon-m badge-container">
+                    <i class="fas fa-bell" title="notification"></i>
+                    <span class="badge badge-m badge-num top-right">20+</span>
+                  </button>
+                </div>
+
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520btn-icon-l%2520badge-container%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%2520title%253D%2522shopping%2520cart%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520badge-l%2520badge-num%2520top-right%2520bold-txt%2522%253E%250A%2509%25095%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520btn-icon-m%2520badge-container%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-bell%2522%2520title%253D%2522notification%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520badge-m%2520badge-num%2520top-right%2522%253E%250A%2520%2520%2520%2520%250920%252B%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./alert.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Alert
+                </a>
+                <a href="./button.html" class="ml-auto">
+                  Button
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li class="m-s">
+                  <a href="#badge-on-avatar" class="py-1">Badge on Avatar</a>
+                </li>
+
+                <li class="m-s">
+                  <a href="#badge-on-icons" class="py-1">Badge on Icons</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with ❤️ by Usha</p>
+          <div class="social-links">
+            <a href="https://twitter.com/UshaBG1" class="mr-s"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/ushagururaj/" class="mr-s"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/usha-bg-002734192/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/switch-theme.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/sidenav.js"></script>
+  </body>
+</html>
