@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
 
-    <title>Castor-UI | Image</title>
+    <title>Castor-UI | Rating</title>
   </head>
   <body>
     <div class="wrapper">
@@ -102,7 +102,7 @@
                     <li class="m-s">
                       <a href="./card.html">Card</a>
                     </li>
-                    <li class="m-s active">
+                    <li class="m-s">
                       <a href="./image.html">Image</a>
                     </li>
                     <li class="m-s">
@@ -111,11 +111,11 @@
                     <li class="m-s">
                       <a href="./list.html">List</a>
                     </li>
-                    <li class="m-s">
-                      <a href="./rating.html">Rating</a>
+                    <li class="m-s active">
+                        <a href="./rating.html">Rating</a>
                     </li>
                     <li class="m-s">
-                      <a href="./slider.html">Slider</a>
+                        <a href="./slider.html">Slider</a>
                     </li>
                   </ul>
                 </li>
@@ -126,73 +126,48 @@
           <div class="main-content">
             <section>
               <div>
-                <h1>Image</h1>
+                <h1>Rating</h1>
 
                 <p>
-                  Responsive images are images that never becomes wider than their parent
-                  container.
+                    Ratings provide insight regarding user's opinions and experiences, 
+                    and can allow the user to submit a rating of their own.
                 </p>
               </div>
 
               <section>
-                <h1 id="responsive-image">Responsive Image</h1>
+                <h2 id="basic-rating">Basic Rating</h2>
 
                 <p>
-                  Images can be made responsive by adding
-                  <code>img-responsive</code> class to the &lt;img&gt; element.
+                    Use the class <code>filled</code> to indicate a full star and class
+                    <code>half-filled</code> to indicate half filled star.
                 </p>
 
                 <div class="demo-container">
-                  <img
-                    class="img-responsive"
-                    src="https://picsum.photos/200"
-                    alt="reponsive image"
-                  />
+                    <ul class="rating">
+                        <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+                        <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+                        <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+                        <li class="rating-icon"><i class="fas fa-star filled"></i></li>
+                        <li class="rating-icon"><i class="fas fa-star half-filled"></i></li>
+                    </ul>
                 </div>
 
                 <figure class="code-container">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2520%2520%2520%2520%2509class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2520%2520%2520%2520%2509alt%253D%2522reponsive%2520image%2522%250A%2509%252F%253E"
-                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
-                </figure>
-              </section>
-
-              <section>
-                <h2 id="round-image">Round Image</h2>
-
-                <p>
-                  Round or circular images are used in lot of place, such as
-                  profile picture. You can make image round or circular using
-                  <code>img-round</code> class which apply
-                  <code>border-radius: 50%</code> to the &lt;img&gt; element.
-                </p>
-
-                <div class="demo-container">
-                  <img
-                    class="img-responsive img-round"
-                    src="https://picsum.photos/200"
-                    alt="round image"
-                  />
-                </div>
-
-                <figure class="code-container">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2509%2509alt%253D%2522round%2520image%2522%250A%2509%252F%253E"
-                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cul%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cli%2520class%253D%2522rating-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520filled%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522rating-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520filled%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522rating-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520filled%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522rating-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520filled%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522rating-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520half-filled%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E"
+                        style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                 </figure>
               </section>
 
               <div class="next-pre-btns">
-                <a href="./card.html">
+                <a href="./input.html">
                   <span><i class="fas fa-chevron-left"></i></span>
-                  Card
-                </a>
-                <a href="./input.html" class="ml-auto">
                   Input
+                </a>
+                <a href="./slider.html" class="ml-auto">
+                  Slider
                   <span><i class="fas fa-chevron-right"></i></span>
                 </a>
               </div>
@@ -202,11 +177,7 @@
               <h5>On This Page</h5>
               <ul>
                 <li>
-                  <a href="#responsive-image">Responsive Image</a>
-                </li>
-
-                <li>
-                  <a href="#round-image">Round Image</a>
+                  <a href="#basic-rating">Basic Rating</a>
                 </li>
               </ul>
             </aside>
