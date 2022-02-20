@@ -102,11 +102,14 @@
                     <li class="m-s">
                       <a href="./card.html">Card</a>
                     </li>
-                    <li class="m-s active">
+                    <li class="m-s">
                       <a href="./image.html">Image</a>
                     </li>
-                    <li class="m-s">
+                    <li class="m-s active">
                       <a href="./input.html">Input</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./form.html">Form</a>
                     </li>
                   </ul>
                 </li>
@@ -117,33 +120,46 @@
           <div class="main-content">
             <section>
               <div>
-                <h1>Image</h1>
+                <h1>Input</h1>
 
                 <p>
-                  Responsive images are images that never becomes wider than their parent
-                  container.
+                  Inputs allow user to enter or select choices. Input is another way the user interacts with websites. 
                 </p>
               </div>
 
               <section>
-                <h1 id="responsive-image">Responsive Image</h1>
+                <h2 id="input-field">Input Fields</h2>
 
                 <p>
-                  Images can be made responsive by adding
-                  <code>img-responsive</code> class to the &lt;img&gt; element.
+                  Input fields usually have a label along with the actual input field.
                 </p>
 
                 <div class="demo-container">
-                  <img
-                    class="img-responsive"
-                    src="https://picsum.photos/200"
-                    alt="reponsive image"
-                  />
+                  <div class="input-form-wrapper">
+                      <div class="input-group">
+                        <label for="name" class="input-label-block">Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="input-item input-item-block"
+                        />
+                      </div>
+                      <div class="input-group">
+                        <label for="password" class="input-label-block">Password</label>
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="input-item input-item-block"
+                        />
+                      </div>
+                    </div>
                 </div>
 
                 <figure class="code-container">
                   <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2520%2520%2520%2520%2509class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2520%2520%2520%2520%2509alt%253D%2522reponsive%2520image%2522%250A%2509%252F%253E"
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2509%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522input-label-block%2522%253EName%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509type%253D%2522text%2522%250A%2509%2509name%253D%2522name%2522%250A%2509%2509id%253D%2522name%2522%250A%2509%2509class%253D%2522input-item%2520input-item-block%2522%250A%2509%252F%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2509%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522input-label-block%2522%253EPassword%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509type%253D%2522password%2522%250A%2509%2509name%253D%2522password%2522%250A%2509%2509id%253D%2522password%2522%250A%2509%2509class%253D%2522input-item%2520input-item-block%2522%250A%2509%252F%253E%250A%253C%252Fdiv%253E"
                     style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                   </iframe>
@@ -151,26 +167,49 @@
               </section>
 
               <section>
-                <h2 id="round-image">Round Image</h2>
+                <h2 id="input-validate">Input fields with validation</h2>
 
                 <p>
-                  Round or circular images are used in lot of place, such as
-                  profile picture. You can make image round or circular using
-                  <code>img-round</code> class which apply
-                  <code>border-radius: 50%</code> to the &lt;img&gt; element.
+                  By adding class <code>input-success</code> and <code>input-error</code>  on div / form with 
+                  <code>input-group</code> class you can add valiadtions for input fields.
                 </p>
 
                 <div class="demo-container">
-                  <img
-                    class="img-responsive img-round"
-                    src="https://picsum.photos/200"
-                    alt="round image"
-                  />
+                  <div class="input-form-wrapper">
+                    <div class="input-group input-success">
+                      <label for="name1" class="input-label-block">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name1"
+                        class="input-item input-item-block"
+                      />
+                      <div class="input-validation">
+                        <i class="far fa-check-circle"></i>
+                        <small>This username is valid</small>
+                      </div>
+                    </div>
+                    <div class="input-group input-error">
+                      <label for="password1" class="input-label-block"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        name="password"
+                        id="password1"
+                        class="input-item input-item-block"
+                      />
+                      <div class="input-validation">
+                        <i class="far fa-times-circle"></i>
+                        <small>The username and password don't match</small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <figure class="code-container">
                   <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%253Cimg%250A%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509src%253D%2522put%2520image%2520url%2520or%2520path%2520here%2522%250A%2509%2509alt%253D%2522round%2520image%2522%250A%2509%252F%253E"
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2520input-success%2522%253E%250A%2509%253Clabel%2520for%253D%2522name1%2522%2520class%253D%2522input-label-block%2522%253EName%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509%2509type%253D%2522text%2522%250A%2509%2509name%253D%2522name%2522%250A%2509%2509id%253D%2522name1%2522%250A%2509%2509class%253D%2522input-item%2520input-item-block%2522%250A%2509%252F%253E%250A%2509%253Cdiv%2520class%253D%2522input-validation%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522far%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2509%2509%253Csmall%253EThis%2520username%2520is%2520valid%253C%252Fsmall%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-group%2520input-error%2522%253E%250A%2509%253Clabel%2520for%253D%2522password1%2522%2520class%253D%2522input-label-block%2522%253EPassword%253C%252Flabel%253E%250A%2509%253Cinput%250A%2509type%253D%2522password%2522%250A%2509name%253D%2522password%2522%250A%2509id%253D%2522password1%2522%250A%2509class%253D%2522input-item%2520input-item-block%2522%250A%2509%252F%253E%250A%2509%253Cdiv%2520class%253D%2522input-validation%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522far%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2509%2509%253Csmall%253EThe%2520username%2520and%2520password%2520don%27t%2520match%253C%252Fsmall%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                     style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                   </iframe>
@@ -178,12 +217,12 @@
               </section>
 
               <div class="next-pre-btns">
-                <a href="./card.html">
+                <a href="./image.html">
                   <span><i class="fas fa-chevron-left"></i></span>
-                  Card
+                  Image
                 </a>
-                <a href="./input.html" class="ml-auto">
-                  Input
+                <a href="./form.html" class="ml-auto">
+                  Form
                   <span><i class="fas fa-chevron-right"></i></span>
                 </a>
               </div>
@@ -193,11 +232,11 @@
               <h5>On This Page</h5>
               <ul>
                 <li>
-                  <a href="#responsive-image">Responsive Image</a>
+                  <a href="#input-field">Input Fields</a>
                 </li>
 
                 <li>
-                  <a href="#round-image">Round Image</a>
+                  <a href="#input-validate">Input fields with validation</a>
                 </li>
               </ul>
             </aside>
