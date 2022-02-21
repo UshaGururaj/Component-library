@@ -1,0 +1,102 @@
+.badge {
+    border: 1px solid var(--white-txt);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.badge-container {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.badge-l {
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.badge-m {
+  font-size: 1.25rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.badge-s {
+  height: 1rem;
+  width: 1rem;
+}
+
+.badge-xm {
+  height: 0.875rem;
+  width: 0.875rem;
+}
+
+.badge-online {
+  background-color: var(--green-color);
+}
+
+.badge-offline {
+  background-color: var(--gray-color);
+}
+
+.badge-busy {
+  background-color: var(--red-color);
+}
+
+.badge-num {
+  background-color: var(--light-blue-color);
+  color: var(--black-color);
+}
+
+.top-left {
+  left: 6%;
+  top: 7%;
+}
+
+.top-right {
+  right: 2%;
+  top: 2%;
+}
+
+.bottom-right {
+  right: 5%;
+  bottom: 10%;
+}
+
+.bottom-left {
+  left: 3%;
+  bottom: 10%;
+}
+
+.btn.btn-icon:hover{
+  color : var(--black-color);
+}
+
+.btn-icon .badge-l {
+  font-size: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn-icon .top-right{
+  top :1px;
+  right:7px;
+}
+
+.btn-icon .badge-m {
+  font-size: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.btn-icon .badge-xm {
+  font-size: 0.625rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}

@@ -1,0 +1,26 @@
+.list {
+  margin: 0;
+  color : var(--black-color);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.style-none {
+  list-style: none;
+}
+
+.list.list-bullet {
+  list-style-type: circle;
+}
+
+.list-item-container {
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+}
+
+.list-horizontal {
+  display: flex;
+  gap: 1rem;
+}

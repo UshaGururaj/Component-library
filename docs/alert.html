@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Castor-UI | Alert</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-s">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo"> CASTOR-UI </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-s">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-s active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-s">
+                <a
+                  href="https://github.com/ushagururaj/component-library"
+                  class="border-10"
+                  >Contribute <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="m-s pt-1">
+                <button class="theme-switch-btn">
+                  <i class="fas fa-moon" title="switch theme"></i>
+                </button>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-s"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-s">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-s">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-s active">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./input.html">Input</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./list.html">List</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./rating.html">Rating</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./slider.html">Slider</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Alert</h1>
+                <p>
+                  Alerts are used to get user's attention for 
+                  important information without interrupting the user's flow.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="simple-alert">Simple Alerts with Icon</h2>
+  
+                <p>
+                  Use <code>class="alert"</code> class with respective contextual 
+                  classes to give user different messages based
+                  on context such as success, error, or warning, etc. 
+                  Those contextual classes are <code>class="alert-success"</code> ,
+                  <code>class="alert-warning"</code> , <code>class="alert-error"</code> ,
+                  <code>class="alert-info"</code> .
+                </p>
+  
+                <div class="demo-container">
+                  <div class="alert alert-success">
+                    <span class="pr-s">
+                      <i class="fas fa-check-circle"></i>
+                    </span>
+                    Success!
+                  </div>
+
+                  <div class="alert alert-error">
+                    <span class="pr-s">
+                      <i class="fas fa-exclamation-circle"></i>
+                    </span>
+                    Error while loading data
+                  </div>
+
+                  <div class="alert alert-warning">
+                    <span class="pr-s">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    Warning
+                  </div>
+
+                  <div class="alert alert-info">
+                    <span class="pr-s">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    Info
+                  </div>
+                </div>
+  
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11px&lh=101%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2520%2520%253C%21--%2520Success%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Success%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2520%2520%253C%21--%2520Error%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Error%2520while%2520loading%2520data%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2520%2520%253C%21--%2520Warning%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Warning%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2520%2520%253C%21--%2520Information%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Info%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+
+              <section>
+                <h2 id="alert-with-dismiss">Alert with close button</h2>
+
+                <p>
+                  Alert with close button removes the alert from website. 
+                  Use contextual classes <code>class="alert-close"</code> 
+                  and <code>class="close-alert"</code> 
+                  to implement this alert in your website.
+                </p>
+
+                <div class="demo-container">
+                  <div class="alert alert-close alert-warning">
+                    <span class="pr-s"
+                      ><i class="fas fa-exclamation-triangle"></i
+                    ></span>
+                      Warning
+                    <span class="close-alert"
+                      ><i class="fas fa-times"></i
+                    ></span>
+                  </div>
+                </div>
+
+              <p class="h4">HTML Code</p>
+  
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11px&lh=101%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2520%2520%253C%21--%2520Alert%2520with%2520close%2520button%2520--%253E%250A%2509%2509%2509%2509%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-close%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522pr-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Warning%250A%2509%2509%2509%2509%2509%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+  
+                <p class="h4">JavaScript Code</p>
+  
+                <figure class="code-container">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11px&lh=101%25&si=false&es=2x&wm=false&code=const%2520alertCloseBtn%2520%253D%2520document.querySelector%28%2522.close-alert%2522%29%253B%250A%250AalertCloseBtn.addEventListener%28%2522click%2522%252C%2520function%2520alertClose%28%29%2520%257B%250A%2520%2520%250A%2520%2520const%2520alert%2520%253D%2520alertCloseBtn.parentElement%253B%250A%2520%2520const%2520demoContainer%2520%253D%2520alert.parentElement%253B%250A%250A%2520%2520alert.remove%28%29%253B%250A%250A%2520%2520demoContainer.innerHTML%2520%253D%2520%2522Alert%2520closed%21%2522%253B%250A%2520%2520demoContainer.style.color%2520%253D%2520%2522var%28--primary-color%29%2522%253B%250A%2520%2520%250A%257D%29%253B%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2509%2509%2509%2509%2509%2509%2509"
+                    style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </figure>
+              </section>
+  
+              <div class="next-pre-btns">
+                <a href="./avatar.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Avatar
+                </a>
+                <a href="./badge.html" class="ml-auto">
+                  Badge
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li class="m-s">
+                  <a href="#simple-alert" class="py-1"> Simple Alerts with Icon </a>
+                </li>
+
+                <li class="m-s">
+                  <a href="#alert-with-dismiss" class="py-1"
+                    >Alert with Close button
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with ❤️ by Usha</p>
+          <div class="social-links">
+            <a href="https://twitter.com/UshaBG1" class="mr-s"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/ushagururaj" class="mr-s"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/usha-bg-002734192/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/switch-theme.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/sidenav.js"></script>
+    <script src="../components/js/alert-close.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="./docs//css/index.css" />
+    <title>Castor-UI | Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-s">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="./index.html" class="logo"> CASTOR-UI </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-s active">
+                <a href="./index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-s">
+                <a href="./docs/get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-s">
+                <a
+                  href="https://github.com/UshaGururaj/component-library"
+                  class="border-10"
+                  >Contribute <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="m-s pt-1">
+                <button class="theme-switch-btn">
+                  <i class="fas fa-moon" title="switch theme"></i>
+                </button>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <div class="home-main-wrapper p-2 max-1000-center min-vh-85">
+        <main class="grid grid-50-50 min-vh-85 g-2 grid-y-center">
+          <div class="hero-txt">
+            <h1> Castor-UI</h1>
+            <p>
+              Build Responsive, Beautiful UI faster with <strong class="txt-black">Castor-UI</strong>.
+            </p>
+
+            <a
+              href="./docs/get-started.html"
+              class="btn btn-primary border-10 txt-semibold txt-white"
+            >
+              Get Started
+            </a>
+          </div>
+          <div class="mt-2">
+            <img src="./assets/hero-img.svg" alt="" class="img-responsive" />
+          </div>
+        </main>
+      </div>
+
+      <div class="footer-wrapper bg-secondary txt-white">
+        <footer class="txt-center py-2">
+          <p>Made with ❤️ by Usha</p>
+          <div class="social-links">
+            <a href="https://twitter.com/UshaBG1" class="mr-s"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/ushagururaj" class="mr-s"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/usha-bg-002734192/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./docs/js/navbar.js"></script>
+    <script src="./docs/js/switch-theme.js"></script>
+  </body>
+</html>
