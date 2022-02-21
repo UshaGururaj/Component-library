@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Castor-UI | Slider</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper py-s">
+        <header class="header max-1200-center p-1">
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo"> CASTOR-UI </a>
+
+            <button class="menu-btn">
+              <i class="fas fa-2x fa-bars" title="Menu"></i>
+              <span class="visually-hidden">Menu</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li class="m-s">
+                <a href="../index.html" class="border-10">Home</a>
+              </li>
+              <li class="m-s active">
+                <a href="./get-started.html" class="border-10">Docs</a>
+              </li>
+              <li class="m-s">
+                <a
+                  href="https://github.com/ushagururaj/component-library"
+                  class="border-10"
+                  >Contribute <i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="m-s pt-1">
+                <button class="theme-switch-btn">
+                  <i class="fas fa-moon" title="switch theme"></i>
+                </button>
+              </li>
+            </ul>
+
+            <button class="navbar-close-btn">
+              <i class="far fa-2x fa-times-circle" class="border-10"></i>
+              <span class="visually-hidden">Close</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+
+      <div class="main-wrapper mx-1 mt-1">
+        <main class="docs-main">
+          <aside class="aside-nav py-1 mt-2">
+            <nav
+              class="aside-navigation pl-s"
+              aria-label="secondary-navigation"
+            >
+              <ul>
+                <li class="component-dropdown py-s">
+                  Menu
+                  <span class="dropdown-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Get Started</h5>
+                </li>
+
+                <li>
+                  <a href="./get-started.html">Installation</a>
+                </li>
+
+                <li>
+                  <h5 class="my-1">Components</h5>
+                  <ul>
+                    <li class="m-s">
+                      <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./button.html">Button</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./card.html">Card</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./image.html">Image</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./input.html">Input</a>
+                    </li>
+                    <li class="m-s">
+                      <a href="./list.html">List</a>
+                    </li>
+                    <li class="m-s">
+                        <a href="./rating.html">Rating</a>
+                    </li>
+                    <li class="m-s  active">
+                        <a href="./slider.html">Slider</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="main-content">
+            <section>
+              <div>
+                <h1>Slider</h1>
+
+                <p>
+                    Slider's are another way to get Users input on a property which 
+                    can take up a range of values. These are usually seen in E-Commerce 
+                    apps to filter products based on price ranges and in Multimedia apps 
+                    to control playback volume.
+                </p>
+              </div>
+
+              <section>
+                <h2 id="basic-slider">Basic Slider</h2>
+
+                <p>
+                    Copy paste the code to implement basic slider in your website.
+                </p>
+
+                <div class="demo-container">
+                    <div class="slider-container">
+                        <label for="priceRange">Price Range:</label>
+                        <input
+                          type="range"
+                          name="price-range"
+                          min="0"
+                          max="50000"
+                          id="price-range-slider"
+                          list="tickmarks"
+                        />
+          
+                        <datalist id="tickmarks">
+                          <option value="0" label="0"></option>
+                          <option value="5000" label="5000"></option>
+                          <option value="10000" label="10000"></option>
+                          <option value="15000" label="15000"></option>
+                          <option value="20000" label="20000"></option>
+                          <option value="25000" label="25000"></option>
+                          <option value="30000" label="30000"></option>
+                          <option value="35000" label="35000"></option>
+                          <option value="40000" label="40000"></option>
+                          <option value="45000" label="45000"></option>
+                          <option value="50000" label="50000"></option>
+                        </datalist>
+                      </div>
+                </div>
+
+                <figure class="code-container">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Clabel%2520for%253D%2522priceRange%2522%253EPrice%2520Range%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520%250A%2509%2509%2509type%253D%2522range%2522%2520%250A%2509%2509%2509name%253D%2522price-range%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522price-range-slider%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E"
+                        style="width: 550px; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </figure>
+              </section>
+
+              <div class="next-pre-btns">
+                <a href="./rating.html">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                  Rating
+                </a>
+              </div>
+            </section>
+
+            <aside class="page-navigation">
+              <h5>On This Page</h5>
+              <ul>
+                <li>
+                  <a href="#basic-slider">Basic Slider</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <div class="docs footer-wrapper bg-secondary txt-white txt-center">
+        <footer class="py-2">
+          <p>Made with ❤️ by Usha</p>
+          <div class="social-links">
+            <a href="https://twitter.com/UshaBG1" class="mr-s"
+              ><i class="fab fa-twitter-square" title="Twitter"></i
+            ></a>
+            <a href="https://github.com/ushagururaj" class="mr-s"
+              ><i class="fab fa-github-square" title="Github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/usha-bg-002734192/"
+              ><i class="fab fa-linkedin" title="LinkedIn"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/switch-theme.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/sidenav.js"></script>
+  </body>
+</html>
